@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#dce9d8" />
+  <title>Hai, Guru! — Sebuah Pesan Kecil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="topline">a little note for a special teacher</div>
+    <section class="book" id="book">
+      <div class="book-inner">
+        <header class="hero">
+          <div class="eyebrow">✿ a page full of appreciation ✿</div>
+          <h1>Hai, Guru!</h1>
+          <p>Setiap ilmu yang diberikan adalah hadiah. Yuk, tuliskan pesan kecil untuk guru yang sudah menjadi bagian dari perjalananmu.</p>
+          <div class="ornament">✿ · ❀ · ✿</div>
+        </header>
+
+        <section class="content" id="creator">
+          <div class="form-panel">
+            <div class="section-kicker">your little message</div>
+            <h2>Buat pesanmu</h2>
+            <label for="teacher">Pesan ini untuk siapa?</label>
+            <input id="teacher" maxlength="60" placeholder="Contoh: Bu Rina / Pak Budi" />
+            <label for="preset">Pilih inspirasi ucapan</label>
+            <select id="preset">
+              <option value="">— Pilih kata-kata (opsional) —</option>
+              <option value="Terima kasih sudah sabar membimbing dan mengajarkan banyak hal. Semoga kebaikan Bapak/Ibu selalu dibalas dengan kebahagiaan.">Terima kasih, Guru</option>
+              <option value="Terima kasih karena tidak pernah lelah membimbing kami. Ilmu dan nasihat Bapak/Ibu akan selalu kami ingat.">Terima kasih atas bimbingannya</option>
+              <option value="Semoga Bapak/Ibu selalu sehat, bahagia, dan terus menjadi inspirasi bagi banyak murid.">Doa terbaik untuk Guru</option>
+              <option value="Maaf kalau selama belajar bersama, kami pernah membuat Bapak/Ibu lelah atau kecewa. Terima kasih sudah tetap sabar menghadapi kami.">Maaf dan terima kasih</option>
+              <option value="Bapak/Ibu bukan hanya mengajarkan pelajaran, tetapi juga memberi banyak hal berharga untuk kehidupan kami.">Guru adalah inspirasi</option>
+            </select>
+            <label for="message">Tulis pesanmu</label>
+            <textarea id="message" maxlength="600" placeholder="Tuliskan ucapan dari hati kamu di sini..."></textarea>
+            <div class="hint">Kamu bisa memilih contoh ucapan lalu mengubahnya, atau menulis pesan sendiri. Maksimal 600 karakter.</div>
+            <div class="actions">
+              <button class="btn btn-primary" id="saveBtn">Simpan pesan ✿</button>
+              <button class="btn btn-soft" id="clearBtn" type="button">Kosongkan</button>
+            </div>
+          </div>
+          <div class="art" aria-label="Ilustrasi buket bunga dan balon">
+            <span class="flower f1">✿</span><span class="flower f2">❀</span><span class="flower f3">✽</span>
+            <span class="balloon b1"></span><span class="balloon b2"></span>
+            <div class="art-card">
+              <div class="bouquet">💐</div>
+              <div class="art-caption">Untuk Guru<br/>Tersayang</div>
+              <div class="art-sub">WITH LOVE & GRATITUDE</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="result" id="result" aria-live="polite">
+          <div class="mini">✿ a message made just for you ✿</div>
+          <h2 id="greeting">Hai, Guru!</h2>
+          <p class="result-message" id="resultMessage"></p>
+          <div class="result-from">Dengan penuh rasa terima kasih ♡</div>
+          <div class="result-actions" id="ownerActions">
+            <button class="btn btn-primary" id="sendBtn">Kirim pesan ↗</button>
+            <button class="btn btn-soft" id="againBtn">Buat lagi ✿</button>
+          </div>
+        </section>
+        <footer class="foot">Dibuat dengan tulus, untuk guru yang istimewa · ♡</footer>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast">Link berhasil disalin!</div>
+  <script src="script.js"></script>
+</body>
+</html>
